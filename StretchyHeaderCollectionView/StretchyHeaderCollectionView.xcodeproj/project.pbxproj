@@ -15,6 +15,7 @@
 		AC0B02062A66C00F0004FD08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0B02042A66C00F0004FD08 /* LaunchScreen.storyboard */; };
 		AC0B020E2A66C6160004FD08 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0B020D2A66C6160004FD08 /* HeaderView.swift */; };
 		AC0B02102A66CB350004FD08 /* UIView + EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0B020F2A66CB350004FD08 /* UIView + EXT.swift */; };
+		AC0B02122A66F88D0004FD08 /* StretchyHeaderViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0B02112A66F88D0004FD08 /* StretchyHeaderViewLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		AC0B02072A66C00F0004FD08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC0B020D2A66C6160004FD08 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		AC0B020F2A66CB350004FD08 /* UIView + EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + EXT.swift"; sourceTree = "<group>"; };
+		AC0B02112A66F88D0004FD08 /* StretchyHeaderViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderViewLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				AC0B020F2A66CB350004FD08 /* UIView + EXT.swift */,
 				AC0B01FD2A66C00E0004FD08 /* StretchyHeaderViewController.swift */,
 				AC0B020D2A66C6160004FD08 /* HeaderView.swift */,
+				AC0B02112A66F88D0004FD08 /* StretchyHeaderViewLayout.swift */,
 				AC0B01FF2A66C00E0004FD08 /* Main.storyboard */,
 				AC0B02022A66C00F0004FD08 /* Assets.xcassets */,
 				AC0B02042A66C00F0004FD08 /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 				AC0B02102A66CB350004FD08 /* UIView + EXT.swift in Sources */,
 				AC0B01FC2A66C00E0004FD08 /* SceneDelegate.swift in Sources */,
 				AC0B020E2A66C6160004FD08 /* HeaderView.swift in Sources */,
+				AC0B02122A66F88D0004FD08 /* StretchyHeaderViewLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

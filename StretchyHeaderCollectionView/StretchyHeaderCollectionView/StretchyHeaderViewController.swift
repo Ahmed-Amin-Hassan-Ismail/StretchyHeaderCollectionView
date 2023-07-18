@@ -52,7 +52,9 @@ class StretchyHeaderViewController: UIViewController {
     
     private func setupCustomLayout() {
         
-        guard let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else { return }
+        collectionView.collectionViewLayout = StretchyHeaderViewLayout()
+        
+        guard let layout = collectionView.collectionViewLayout as? StretchyHeaderViewLayout else { return }
         
         layout.sectionInset = UIEdgeInsets(top: padding,
                                            left: padding,
