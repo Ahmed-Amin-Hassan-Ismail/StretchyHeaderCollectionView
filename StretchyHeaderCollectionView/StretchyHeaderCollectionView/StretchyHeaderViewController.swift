@@ -79,8 +79,6 @@ extension StretchyHeaderViewController: UICollectionViewDataSource {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
         
-        cell.backgroundColor = .blue
-        
         return cell
     }
     

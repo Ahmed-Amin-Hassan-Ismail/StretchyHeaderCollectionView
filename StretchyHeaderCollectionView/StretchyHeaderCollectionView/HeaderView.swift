@@ -67,7 +67,7 @@ class HeaderView: UICollectionReusableView {
     private func setupGradientLayer() {
         
         let gradientLayer = CAGradientLayer()
-        gradientLayer.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
+        gradientLayer.colors = [UIColor.clear.cgColor, UIColor.black.withAlphaComponent(0.5).cgColor]
         gradientLayer.locations = [0, 1]
         
         let containerView = UIView()
