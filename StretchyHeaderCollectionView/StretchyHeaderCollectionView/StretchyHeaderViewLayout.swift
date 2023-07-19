@@ -8,7 +8,6 @@
 import UIKit
 
 class StretchyHeaderViewLayout: UICollectionViewFlowLayout {
-
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         
@@ -17,13 +16,14 @@ class StretchyHeaderViewLayout: UICollectionViewFlowLayout {
         layoutAttributes?.forEach({ attribute in
             
             
-            if attribute.representedElementKind == UICollectionView.elementKindSectionHeader {
+            if attribute.representedElementKind == UICollectionView.elementKindSectionHeader &&
+                attribute.indexPath.section == 0 {
                 
                 guard let collectionView = collectionView else { return }
                 
                 let contentYOffset = collectionView.contentOffset.y
                 
-                guard contentYOffset < 0 else { return }
+                guard contentYOffset <  0 else { return }
                 
                 let width = collectionView.frame.width
                 let height = attribute.frame.height - contentYOffset
