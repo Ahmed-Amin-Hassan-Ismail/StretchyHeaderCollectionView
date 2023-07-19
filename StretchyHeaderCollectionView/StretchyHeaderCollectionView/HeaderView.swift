@@ -33,6 +33,7 @@ class HeaderView: UICollectionReusableView {
         
         setupHeaderView()
         setupVisualEffect()
+        setupGradientLayer()
     }
     
     required init?(coder: NSCoder) {
@@ -61,6 +62,26 @@ class HeaderView: UICollectionReusableView {
         
         animator.isReversed = true
         animator.fractionComplete = 0
+    }
+    
+    private func setupGradientLayer() {
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
+        gradientLayer.locations = [0, 1]
+        
+        let containerView = UIView()
+        addSubview(containerView)
+        containerView.anchor(top: nil,
+                             bottom: bottomAnchor,
+                             leading: leadingAnchor,
+                             trailing: trailingAnchor)
+        
+        containerView.layer.addSublayer(gradientLayer)
+        
+        gradientLayer.frame = bounds
+        
+        gradientLayer.frame.origin.y -= bounds.height
     }
     
 }
